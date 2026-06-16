@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Benefit {
+  id                 String   @id
+  name               String
+  category           String
+  audience           String
+  provinces          Json
+  provider           String
+  description        String
+  eligibilitySummary String
+  applyUrl           String
+  studentTypes       Json?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
