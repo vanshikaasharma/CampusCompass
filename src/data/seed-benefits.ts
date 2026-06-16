@@ -128,4 +128,157 @@ export const SEED_BENEFITS: Benefit[] = [
     applyUrl: "https://www.amazon.ca/amazonprime",
     studentTypes: ["college", "university"],
   },
+  {
+    id: "adobe-cc-student",
+    name: "Adobe Creative Cloud Student",
+    category: "discount",
+    audience: "both",
+    provinces: ["national"],
+    provider: "Adobe",
+    description: "Discounted Creative Cloud apps for students and teachers.",
+    eligibilitySummary:
+      "Proof of enrollment at an accredited institution. International students in Canada eligible.",
+    applyUrl: "https://www.adobe.com/ca/creativecloud/buy/students.html",
+    studentTypes: ["college", "university", "grad"],
+  },
+  {
+    id: "apple-education",
+    name: "Apple Education Store",
+    category: "discount",
+    audience: "both",
+    provinces: ["national"],
+    provider: "Apple",
+    description: "Education pricing on Mac, iPad, and accessories for students.",
+    eligibilitySummary:
+      "Currently enrolled students. UNiDAYS or school verification — open to international students.",
+    applyUrl: "https://www.apple.com/ca-edu/store",
+    studentTypes: ["college", "university", "grad"],
+  },
+  {
+    id: "mcgill-entrance-intl",
+    name: "McGill University Entrance Scholarships",
+    category: "scholarship",
+    audience: "international",
+    provinces: ["QC"],
+    provider: "McGill University",
+    description:
+      "Merit-based entrance scholarships for new undergraduate students, including international applicants.",
+    eligibilitySummary:
+      "First-year undergraduate applicants to McGill. Separate application may be required for major awards.",
+    applyUrl:
+      "https://www.mcgill.ca/studentaid/scholarships-aid/future-undergrads/entrance",
+    studentTypes: ["university"],
+  },
+  {
+    id: "ubc-intl-leader",
+    name: "UBC International Leader of Tomorrow Award",
+    category: "scholarship",
+    audience: "international",
+    provinces: ["BC"],
+    provider: "University of British Columbia",
+    description:
+      "Merit and need-based awards for exceptional international undergraduate students.",
+    eligibilitySummary:
+      "International student applying to UBC undergraduate program for the first time.",
+    applyUrl:
+      "https://you.ubc.ca/financial-planning/awards-scholarships-bursaries/international-awards/",
+    studentTypes: ["university"],
+  },
+  {
+    id: "vanier-graduate",
+    name: "Vanier Canada Graduate Scholarships",
+    category: "scholarship",
+    audience: "international",
+    provinces: ["national"],
+    provider: "Government of Canada",
+    description:
+      "Prestigious doctoral scholarships for Canadian and international PhD students.",
+    eligibilitySummary:
+      "Nominated by a Canadian institution. Must be pursuing a doctoral degree in Canada.",
+    applyUrl: "https://vanier.gc.ca/en/home-accueil.html",
+    studentTypes: ["grad"],
+  },
+  {
+    id: "ircc-work-study",
+    name: "Work While Studying (IRCC)",
+    category: "resource",
+    audience: "international",
+    provinces: ["national"],
+    provider: "Immigration, Refugees and Citizenship Canada",
+    description:
+      "Official guide on working on-campus and off-campus with a study permit.",
+    eligibilitySummary:
+      "International students with a valid study permit. Rules vary for on- vs off-campus work.",
+    applyUrl:
+      "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html",
+  },
+  {
+    id: "telus-student",
+    name: "TELUS Student Discount",
+    category: "discount",
+    audience: "both",
+    provinces: ["national"],
+    provider: "TELUS",
+    description: "Reduced phone and internet plans for verified Canadian students.",
+    eligibilitySummary:
+      "Enrolled in a Canadian post-secondary school. Student ID or enrollment verification required.",
+    applyUrl: "https://www.telus.com/en/mobility/student",
+    studentTypes: ["college", "university"],
+  },
+  {
+    id: "rbc-student-banking",
+    name: "RBC International Student Banking",
+    category: "resource",
+    audience: "international",
+    provinces: ["national"],
+    provider: "RBC",
+    description:
+      "Bank account packages and guidance for newcomers and international students.",
+    eligibilitySummary:
+      "International students new to Canada. Study permit and proof of enrollment typically required.",
+    applyUrl:
+      "https://www.rbcroyalbank.com/en-ca/newcomers-to-canada/students/",
+  },
+  {
+    id: "humber-intl-scholarship",
+    name: "Humber International Entrance Scholarships",
+    category: "scholarship",
+    audience: "international",
+    provinces: ["ON"],
+    provider: "Humber College",
+    description:
+      "Automatic entrance awards for eligible new international students at Humber College.",
+    eligibilitySummary:
+      "First-semester international student at Humber with strong academic admission average.",
+    applyUrl:
+      "https://humber.ca/admissions/financial-aid/awards-scholarships-bursaries",
+    studentTypes: ["college"],
+  },
+  {
+    id: "uoft-mississauga-intl",
+    name: "UTM International Scholar Award",
+    category: "scholarship",
+    audience: "international",
+    provinces: ["ON"],
+    provider: "University of Toronto Mississauga",
+    description:
+      "Entrance scholarships for high-achieving international undergraduate applicants.",
+    eligibilitySummary:
+      "International student admitted to UTM undergraduate program. No separate application for some awards.",
+    applyUrl: "https://www.utm.utoronto.ca/future-students/finances/scholarships",
+    studentTypes: ["university"],
+  },
+  {
+    id: "headspace-student",
+    name: "Headspace for Students",
+    category: "discount",
+    audience: "both",
+    provinces: ["national"],
+    provider: "Headspace",
+    description: "Discounted mindfulness and meditation app subscription for students.",
+    eligibilitySummary:
+      "Verified student status through SheerID. International students in Canada eligible.",
+    applyUrl: "https://www.headspace.com/studentplan",
+    studentTypes: ["college", "university", "grad"],
+  },
 ];
