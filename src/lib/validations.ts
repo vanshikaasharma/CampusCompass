@@ -19,6 +19,35 @@ export const benefitFiltersQuerySchema = z.object({
 
 export type BenefitFiltersQuery = z.infer<typeof benefitFiltersQuerySchema>;
 
+const provinceValues = ["ON", "BC", "AB", "QC", "national"] as const;
+const studentTypeValues = ["college", "university", "grad"] as const;
+
+/** Validates a new benefit submitted through the admin form. */
+export const createBenefitSchema = z.object({
+  id: z
+    .string()
+    .min(2)
+    .max(60)
+    .regex(/^[a-z0-9-]+$/, "Use lowercase letters, numbers, and hyphens only"),
+  name: z.string().min(2).max(120),
+  category: z.enum([
+    "scholarship",
+    "grant",
+    "discount",
+    "bursary",
+    "resource",
+  ]),
+  audience: z.enum(["international", "domestic", "both"]),
+  provinces: z.array(z.enum(provinceValues)).min(1),
+  provider: z.string().min(2).max(120),
+  description: z.string().min(10).max(500),
+  eligibilitySummary: z.string().min(10).max(500),
+  applyUrl: z.string().url(),
+  studentTypes: z.array(z.enum(studentTypeValues)).optional(),
+});
+
+export type CreateBenefitInput = z.infer<typeof createBenefitSchema>;
+
 /**
  * Parses and validates URL search params into typed filters.
  * Throws if a param has an invalid value (returns 400 from the API).

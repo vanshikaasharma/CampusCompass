@@ -32,14 +32,12 @@ export function SiteHeader({ variant = "dark" }: SiteHeaderProps) {
         >
           Guides
         </Link>
-        <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/admin/add"
           className={isDark ? "hover:text-brand-accent" : "hover:opacity-70"}
         >
-          Support
-        </a>
+          Add
+        </Link>
       </nav>
     </header>
   );

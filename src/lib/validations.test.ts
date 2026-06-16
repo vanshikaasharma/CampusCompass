@@ -34,3 +34,21 @@ describe("parseBenefitFiltersFromSearchParams", () => {
     ).toThrow();
   });
 });
+
+describe("createBenefitSchema", () => {
+  it("accepts a valid benefit payload", async () => {
+    const { createBenefitSchema } = await import("./validations");
+    const result = createBenefitSchema.safeParse({
+      id: "test-benefit",
+      name: "Test Benefit",
+      category: "discount",
+      audience: "both",
+      provinces: ["national"],
+      provider: "Test Co",
+      description: "A short description of the test benefit here.",
+      eligibilitySummary: "Open to all students with valid enrollment proof.",
+      applyUrl: "https://example.com",
+    });
+    expect(result.success).toBe(true);
+  });
+});
