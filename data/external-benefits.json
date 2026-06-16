@@ -1,0 +1,37 @@
+[
+  {
+    "id": "microsoft-365-edu",
+    "name": "Microsoft 365 Education",
+    "category": "discount",
+    "audience": "both",
+    "provinces": ["national"],
+    "provider": "Microsoft",
+    "description": "Free Office apps for students at eligible schools in Canada.",
+    "eligibilitySummary": "Valid school email required. International and domestic students.",
+    "applyUrl": "https://www.microsoft.com/en-ca/education/products/office",
+    "studentTypes": ["college", "university"]
+  },
+  {
+    "id": "notion-edu",
+    "name": "Notion for Education",
+    "category": "discount",
+    "audience": "both",
+    "provinces": ["national"],
+    "provider": "Notion",
+    "description": "Free Notion Plus for students and educators.",
+    "eligibilitySummary": "Sign up with a valid school email address.",
+    "applyUrl": "https://www.notion.so/product/notion-for-education"
+  },
+  {
+    "id": "bc-international-leader",
+    "name": "BC International Leader of Tomorrow Award",
+    "category": "scholarship",
+    "audience": "international",
+    "provinces": ["BC"],
+    "provider": "University of British Columbia",
+    "description": "Merit-based awards for exceptional international undergraduate students at UBC.",
+    "eligibilitySummary": "International students applying to UBC undergraduate programs.",
+    "applyUrl": "https://you.ubc.ca/financial-planning/awards-scholarships-bursaries/",
+    "studentTypes": ["university"]
+  }
+]

@@ -46,3 +46,5 @@ PROJECT_PLAN.md
 AGENTS.md
 CLAUDE.md
 .neon
+.agents/
+skills-lock.json
