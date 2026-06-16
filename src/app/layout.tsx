@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CampusCompass",
-  description: "Find student benefits that match your profile.",
+  title: "CampusCompass | Resources for international students in Canada",
+  description:
+    "Browse scholarships, grants, discounts, and guides for international students in Canada.",
 };
 
 export default function RootLayout({
