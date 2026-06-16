@@ -114,4 +114,18 @@ export const SEED_BENEFITS: Benefit[] = [
     applyUrl: "https://www.spotify.com/ca-en/student/",
     studentTypes: ["college", "university"],
   },
+  {
+    id: "amazon-prime-student",
+    name: "Amazon Prime Student",
+    category: "discount",
+    audience: "both",
+    provinces: ["national"],
+    provider: "Amazon",
+    description:
+      "Six-month trial and discounted Prime membership for post-secondary students in Canada.",
+    eligibilitySummary:
+      "Enrolled at a Canadian college or university. Valid student email required — international students eligible.",
+    applyUrl: "https://www.amazon.ca/amazonprime",
+    studentTypes: ["college", "university"],
+  },
 ];
