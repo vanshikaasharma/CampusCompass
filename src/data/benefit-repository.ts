@@ -6,12 +6,17 @@ import type {
   StudentType,
 } from "@/domain/types";
 
+/**
+ * Data access contract for benefits.
+ * The API and services depend on this interface, not on Prisma directly.
+ */
 export interface BenefitRepository {
   findAll(): Promise<Benefit[]>;
   findById(id: string): Promise<Benefit | null>;
   upsertMany(benefits: Benefit[]): Promise<void>;
 }
 
+/** Converts a Prisma/database record into our domain Benefit type. */
 export function mapRecordToBenefit(record: {
   id: string;
   name: string;

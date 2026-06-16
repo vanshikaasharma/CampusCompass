@@ -4,6 +4,10 @@ import { PrismaBenefitRepository } from "./prisma-benefit-repository";
 
 let repository: BenefitRepository | null = null;
 
+/**
+ * Returns the shared benefit repository.
+ * Uses Postgres when DATABASE_URL is set, otherwise falls back to in-memory seed data.
+ */
 export function getBenefitRepository(): BenefitRepository {
   if (repository) return repository;
 
@@ -16,7 +20,7 @@ export function getBenefitRepository(): BenefitRepository {
   return repository;
 }
 
-/** For tests only — reset cached repository between test runs */
+/** Resets the cached repository — used in tests only. */
 export function resetBenefitRepositoryForTests(): void {
   repository = null;
 }

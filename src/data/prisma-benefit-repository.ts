@@ -7,6 +7,7 @@ import {
 
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
+// Reuse one Prisma client in dev to avoid too many DB connections on hot reload.
 export const prisma =
   globalForPrisma.prisma ??
   new PrismaClient({
@@ -17,6 +18,7 @@ if (process.env.NODE_ENV !== "production") {
   globalForPrisma.prisma = prisma;
 }
 
+/** Postgres implementation of BenefitRepository via Prisma. */
 export class PrismaBenefitRepository implements BenefitRepository {
   async findAll(): Promise<Benefit[]> {
     const records = await prisma.benefit.findMany({

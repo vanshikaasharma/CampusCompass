@@ -2,6 +2,10 @@ import type { Benefit } from "@/domain/types";
 import type { BenefitRepository } from "./benefit-repository";
 import { SEED_BENEFITS } from "./seed-benefits";
 
+/**
+ * In-memory repository backed by seed data.
+ * Used for local dev when no DATABASE_URL is configured.
+ */
 export class InMemoryBenefitRepository implements BenefitRepository {
   private benefits: Benefit[];
 
