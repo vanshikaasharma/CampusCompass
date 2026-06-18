@@ -139,12 +139,3 @@ DATABASE_URL=your_neon_connection_string
 ```
 
 After deploy, run `npm run db:seed` locally (it uses your `.env`) or seed from the Vercel/Neon dashboard so production has data.
-
-## Notes
-
-- The admin form has no login — fine for a portfolio demo; add auth before any real public launch.
-- Benefit info can go out of date; always check the official `applyUrl` before applying.
-
-## License
-
-MIT
