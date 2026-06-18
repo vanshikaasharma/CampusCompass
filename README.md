@@ -129,13 +129,3 @@ Benefits are curated manually (official program pages, university sites, etc.) â
 | `npm run db:migrate` | Apply Prisma migrations |
 | `npm run db:seed` | Load seed benefits into DB |
 | `npm run db:import` | Import from `external-benefits.json` |
-
-## Deploying
-
-Works on [Vercel](https://vercel.com) with one env var:
-
-```
-DATABASE_URL=your_neon_connection_string
-```
-
-After deploy, run `npm run db:seed` locally (it uses your `.env`) or seed from the Vercel/Neon dashboard so production has data.
